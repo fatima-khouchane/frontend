@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html {
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    min-height: 200px;
+}
+body {
+    width: 400px;
+    max-height: 500px;
+    min-height: 200px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+    text-overflow: ellipsis;
+    
+}
+
+
+.save-url {
+    margin: 5px;
+    width: 400px;
+}
+
+.btn-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 400px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+
+#input-el {
+    font-size: 1rem;
+    padding: 10px;
+    width: 360px;
+    height: 39px;
+    border: 1.5px solid #5f9341;
+    background-color: rgb(246, 249, 255);
+    border-radius: 5px;
+    outline:none;
+    color: rgba(0, 0, 0, 0.788);
+}
+
+#input-el::placeholder {
+    color: #5f9341b2;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    width: 113px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#input-btn {
+    color: #5f9341;
+    background-color: white;
+    border: 2px solid #5f9341
+}
+
+
+#input-btn:hover {
+    background-color: #5f9341;
+    color: white;
+}
+
+#del-btn {
+    color: #5f9341;
+    background-color: white;
+    border: 2px solid #5f9341
+}
+
+#del-btn:hover {
+    background-color: #5f9341;
+    color: white;
+}
+
+#tab-btn {
+    color: #5f9341;
+    background-color: white;
+    border: 2px solid #5f9341
+}
+
+#tab-btn:hover {
+    background-color: #5f9341;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 15px;
+    padding-left: 0;
+}
+
+li > a {
+    text-decoration: none;
+    color: #5f9341;
+    font-size: 1.2rem;
+    text-overflow: nowrap;
+}
+
+hr {
+    width: 320px;
+    border: 0;
+    box-shadow: 0 0 1px 0.7px #5f9341;
+}
