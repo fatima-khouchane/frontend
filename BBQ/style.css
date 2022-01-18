@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+img {
+    width: 100%;
+}
+
+/* 
+----------------------------
+    left side style
+----------------------------
+*/
+
+.left-side h2 {
+    color: #F18119;
+    /* padding: 1em 0; */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.left-side {
+    padding: 0 1em;
+    background-color: #404040;
+    background-image: url(image/dark-ribs.jpg);
+    /* background-blend-mode: ; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50vh;
+}
+
+.delicious-p {
+    text-align: center;
+    letter-spacing: 1px;
+    color: #F18119;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: fit-content;
+    border-top: 9px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(90deg, #FFA51D, #FF713B);
+}
+
+.bbq {
+    font-size: 1.9rem;
+    color: white;
+    text-align: center;
+}
+
+.bbq span {
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+
+/* 
+-------------------------
+    right side style
+-------------------------
+*/
+
+.right-side {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 0 1em;
+}
+
+.landing-page {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.landing-page p {
+    width: 100%;
+    max-width: 480px;
+}
+
+.landing-page h2 {
+    color: rgba(0, 0, 0, 0.945);
+}
+
+.title {
+    text-align: center;
+}
+
+.regsiter {
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #F18119;
+}
+
+/* 
+---------------------
+    form style
+---------------------
+*/
+
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+input {
+    width: 95%;
+    max-width: 300px;
+    height: 40px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.392) ;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s;
+    transform: scale(1);
+}
+
+input:focus {
+    transform: scale(1.025);
+}
+
+button {
+    width: 95%;
+    max-width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: none;
+    background-image: linear-gradient(100deg, #DF4E13, #F18119, #FFA51D, #F18119, #DF4E13);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    background-size: 200%;
+    background-position: left;
+    transition: .5s linear;
+    transform: scale(1);
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background-position: right;
+    transform: scale(1.025);
+
+}
+
+form p {
+    font-size: 0.7rem;
+    width: 50%;
+    letter-spacing: 1px;
+}
+
+.user-name-style {
+    color: #F18119;
+}
+
+/* 
+-----------------
+    media query
+-----------------
+
+*/
+
+@media (min-width: 728px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .bbq {
+        font-size: 2.5rem;
+    }
+
+    .bbq span {
+        font-size: 2.5rem;
+    }
+
+    .left-side {
+        width: 50%;
+        min-height: 100vh;
+        
+    }
+
+    .right-side {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .landing-page {
+        width: 95%;
+    }
+
+    /* .left-side h2 {
+        position: relative;
+        padding: 0em;
+        bottom: 25%;
+    } */
+
+}
