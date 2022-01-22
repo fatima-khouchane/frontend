@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sen", sans-serif;
+  background-color: #ecf0f0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 950px;
+
+  padding: 0 1em;
+}
+
+/* 
+    header style
+*/
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0 1em;
+  padding-bottom: 0.5em;
+  border: 1px solid #474f544d;
+  z-index: 2;
+}
+
+header img {
+  width: 50px;
+}
+
+.logo {
+  display: flex;
+  gap: 0.3em;
+  align-items: center;
+}
+
+.logo p {
+  font-size: 1.5rem;
+  color: #474f54;
+  margin-top: 19px;
+}
+
+.logo p span {
+  color: #fabe2c;
+}
+
+.search {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search input {
+  width: 85%;
+  height: 30px;
+  border-radius: 5px;
+  border-style: none;
+  border: 1px solid #474f5485;
+  padding-left: 1em;
+  font-family: "Sen", sans-serif;
+  outline: none;
+}
+
+.search input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+.search button {
+  background-color: #fabe2c;
+  color: #fff;
+  border-style: none;
+  border-radius: 5px;
+  font-family: "Sen", sans-serif;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 200ms;
+}
+
+.search button:hover,
+.search button:focus {
+  background-color: #474f54;
+}
+
+.search button:active {
+  transform: scale(0.9);
+}
+
+/* ----------------------- */
+
+/* 
+    section contant style
+*/
+
+section {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  background-color: #474f5435;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #474f544d;
+}
+
+article .movie {
+  text-align: center;
+  text-transform: capitalize;
+  cursor: pointer;
+  transform: scale(1);
+  transition: transform 200ms;
+}
+
+article .movie:hover {
+  transform: scale(1.1);
+}
+
+article .movie img {
+  width: 150px;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 35px;
+  height: 35px;
+  align-self: center;
+  background-color: #474f543f;
+  padding: 0.3em;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+
+.arrow-left {
+  transform: rotate(180deg);
+  color: #fabe2c;
+}
+
+/* 
+    footer style
+*/
+
+footer {
+  margin-top: 2em;
+  background-color: #474f54;
+  color: rgba(255, 255, 255, 0.679);
+  padding: 1em;
+  text-align: center;
+}
+
+/* 
+    popup screen
+*/
+
+.popup {
+  width: 550px;
+  background-color: #ecf0f0;
+  display: flex;
+  gap: 0.5em;
+  border-radius: 5px;
+  position: absolute;
+  left: 33%;
+  top: 20%;
+}
+
+.overlayup {
+  display: none;
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.337);
+  z-index: 3;
+}
+
+.popup img {
+  width: 250px;
+  border-radius: 5px 0 0 5px;
+}
+
+.popup .itme img {
+  width: 20px;
+  border-radius: 1px;
+}
+
+.metadata {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+  padding: 0.5em;
+  flex-grow: 1;
+  font-size: 1.4rem;
+}
+
+.popup .itme {
+  display: flex;
+  gap: 1em;
+  transform: scale(1);
+  background-color: #fff;
+  padding: .3em;
+  border-radius: 5px;
+}
+
+.popup .itme > p {
+  width: 40%;
+}
+
+.popup .itme p:first-child  {
+  border-right: 1px solid rgba(0, 0, 0, 0.241);
+}
+
+.popup .itme .lastp {
+  width: 60%;
+}
+
+.popup button {
+  border-style: none;
+  background-color: #30be35;
+  font-weight: bold;
+  color: #fff;
+  padding: 0.7em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: #2cae31;
+}
+
+.metadata > img {
+  width: 15px;
+  align-self: flex-end;
+  cursor: pointer;
+}
