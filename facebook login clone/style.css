@@ -1,0 +1,228 @@
+/* 903 media query */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {   
+    width: 100%;
+}
+
+body {
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    background-color: #f0f2f5;
+}
+
+.container {
+    display: flex;
+    padding: 1em;
+    height: 100vh;
+    margin: 0 10em;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+}
+
+/* 
+------------------------
+    form style
+------------------------
+*/
+
+.login-flex {
+    width: 50%;
+}
+
+.login-form {
+    width: 396px;
+    text-align: center;
+}
+
+.login-form p {
+    margin-top: 1.5em;
+    font-size: .9rem;
+    color: rgba(0, 0, 0, 0.815);
+}
+
+.login-form p span {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-form p span:hover,
+.login-form p span:focus {
+    text-decoration: underline rgba(0, 0, 0, 0.815);
+}
+
+form {
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    font-size: 1rem;
+    width: 396px;
+    height: 349px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 1px 0px 8px rgba(0, 0, 0, 0.103);
+    border-radius: 10px;
+    padding: 1em;
+}
+
+input {
+    font-size: 1rem;
+    outline: none;
+    width: 368px;
+    height: 50px;
+    border-radius: 7px;
+    padding-left: 1em;
+    border-style: none;
+    border: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+input:focus {
+    border-color: #1877f2;
+    outline: .3px solid #1876f246;
+}
+
+input::placeholder {
+    font-family: 'SFProDisplay-Regular', sans-serif;
+    opacity: .7;
+}
+
+button {
+    height: 50px;
+    font-weight: bold;
+    color: #fff;
+    border-style: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.line {
+    width: 368px;
+    border-bottom: 1.1px solid rgba(0, 0, 0, 0.11);
+}
+
+a {
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 1.1rem;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline  #1877f2;
+}
+
+.login-btn {
+    background-color: #1877f2;
+    width: 368px;
+    font-size: 1.3rem;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+    background-color: #1970e2;
+}
+
+.create-btn {
+    background-color: #42b72a;
+    width: 230px;
+    font-size: 1.1rem;
+}
+
+.create-btn:hover,
+.create-btn:focus {
+    background-color: #3ba726;
+}
+
+
+/* 
+------------------------
+    contant style
+------------------------
+*/
+
+.contant {
+    width: 50%;
+    position: relative;
+    bottom: 70px;
+}
+
+.contant img {
+    max-width: 240px;
+    width: 100%;
+}
+
+.contant p {
+    font-size: 1.6rem;
+    margin-top: .5em;
+    padding-left: .1em;
+}
+
+/* 
+------------------------
+    submit style
+------------------------
+*/
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #1877f2;
+    border-bottom: 2px solid #1877f2;
+    padding: 1em;
+}
+
+.welcome img {
+    width: 100px;
+    transform: rotateY(0deg);
+    animation-name: flip;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.932);
+}
+
+h2 span {
+    color: #1877f2;
+    text-transform: uppercase;
+}
+
+@keyframes flip {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/* 
+------------------------
+    media query
+------------------------
+*/
+
+@media (max-width: 945px) {
+    .container {
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        gap: 3em;
+    }
+
+    .contant p {
+        font-size: 1.5rem;
+    }
+}
