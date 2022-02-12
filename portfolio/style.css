@@ -1,0 +1,456 @@
+/* 
+    color:
+        #303030 black
+        #1C4B43 dark green
+        #14CFAE light green
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    max-width: 100wv;
+}
+
+
+/* 
+-----------------------
+    header style
+-----------------------
+*/
+
+header {
+    display: grid;
+    grid-template-columns: .1em 1fr 1fr .1em;
+    grid-template-areas: 
+    ". hmenu logo ."
+    ". name name ."
+    ". dev dev ."
+    ". photo photo .";
+    align-items: center;
+    text-align: center;
+    gap: 1em;
+    min-height: 100vh;
+}
+
+.logo {
+    grid-area: logo;
+    width: 120px;
+    justify-self: end;
+}
+
+.menu {
+    grid-area: hmenu;
+    width: 30px;
+    cursor: pointer;
+}
+
+.name {
+    grid-area: name;
+    font-size: 3rem;
+    font-weight: 200;
+    color: #303030;
+}
+
+.name span {
+    display: block;
+    font-weight: 900;
+}
+
+.dev {
+    grid-area: dev;
+    text-transform: uppercase;
+    background-color: #14CFAE;
+    color: #1C4B43;
+    font-size: 2rem;
+    padding: .2em 0;
+    word-spacing: 5px;
+    justify-self: stretch;
+}
+
+.photo {
+    margin-top: 1em;
+    grid-area: photo;
+    border-radius: 5px;
+    max-width: 307px;
+    justify-self: center;
+}   
+
+/* 
+-----------------------
+    nav style
+-----------------------
+*/
+
+.nav {
+    background-color: #494949;
+    color: #fff;
+    width: 60%;
+    position: fixed;
+    top: 0px;
+    min-height: 100vh;
+    z-index: 3;
+    transform: translateX(-100%);
+    transition: transform .5s;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-items {
+    padding: 1em;
+    font-size: 1.5rem;
+}
+
+.close {
+    width: 20px;
+    padding-top: 1em;
+    margin-left: 1.5em;
+    cursor: pointer;
+}
+
+/* 
+-----------------------
+    what-i-do style
+-----------------------
+*/
+
+.what-i-do {
+    margin-top: 5em;
+    background-color: #303030;
+    display: grid;
+    grid-template-columns: .1em 1fr .1em;
+    gap: 1em;
+    grid-template-areas: 
+    ". h1 ."
+    ". design ."
+    ". ecommrce ."
+    ". wordpress ."
+    ". btn .";
+    justify-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.what-i-do h1 {
+    position: relative;
+    grid-area: h1;
+    padding: .5em 0;
+    font-size: 3rem;
+    color: #14CFAE;
+}
+
+.what-i-do h1::after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 3px;
+    top: 90px;
+    right: 25%;
+    opacity: .4;
+}
+
+.design {
+    grid-area: design;
+}
+
+.ecommerce {
+    grid-area: ecommrce;
+}
+
+.wordpress {
+    grid-area: wordpress;
+}
+
+.mywork {
+    margin-top: 2em;
+    margin-bottom: 3em;
+    grid-area: btn;
+    text-decoration: none;
+    background-color: #14CFAE;
+    color: #303030;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding: .7em 2rem;
+    border-radius: 5px;
+}
+
+.mywork:hover {
+    color: #fff;
+}
+
+.headp {
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding-bottom: 0.5em;
+}
+
+.descp {
+    line-height: 1.5;
+    opacity: .8;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+
+/* 
+-----------------------
+    who i am style
+-----------------------
+*/
+
+.who-iam {
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: .1em 1fr .1em;
+    grid-template-areas: 
+    ". whoiam ."
+    ". title ."
+    ". photoo ."
+    ". desc1 ."
+    ". desc2 ."
+    ;
+    text-align: center;
+    gap: 1em;
+}
+
+.whoiam {
+    grid-area: whoiam;
+    font-size: 3rem;
+    color: #303030;
+}
+
+.title {
+    grid-area: title;
+    background-color: #14CFAE;
+    color: #1C4B43;
+    font-size: 1.5rem;
+    padding: .2em 0;
+    word-spacing: 5px;
+    justify-self: stretch;
+}
+
+.title span {
+    display: block;
+}
+
+.photoo {
+    grid-area: photoo;
+    max-width: 307px;
+    justify-self: center;
+}
+
+.desc1 {
+    grid-area: desc1;
+}
+.desc2 {
+    grid-area: desc2;
+}
+
+.desc1, .desc2 {
+    color: #303030;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* 
+-----------------------
+    project style
+-----------------------
+*/
+
+.project {
+    margin-top: 6em;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    background-color: #303030;
+    padding-bottom: 3em;
+    justify-items: center;
+}
+
+.project img {
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.project div {
+    background-color: #14CFAE;
+    border-radius: 5px;
+    max-width: 320px;
+    overflow: hidden;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+    opacity: .75;
+    
+}
+
+/* 
+-----------------------
+    footer style
+-----------------------
+*/
+
+footer {
+    text-align: center;
+    padding: 6em 0 4em 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+}
+
+.social {
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.email {
+    color: #14CFAE;
+    font-weight: 900;
+    font-size: 1.3rem;
+    letter-spacing: .2px;
+}
+
+.social img {
+    width: 30px;
+}
+
+
+/* 
+-------------------
+    media query
+-------------------
+*/
+
+@media (min-width: 680px) {
+    .project {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .what-i-do {
+        grid-template-columns: .1em 1fr 1fr .1em;
+        grid-template-areas: 
+            ". h1 h1 ."
+            ". design ecommrce ."
+            ". wordpress wordpress  ."
+            ". btn btn .";
+        
+            background-image: url(img/services-bg.jpg);
+    }
+
+    .nav {
+        width: 35%;
+    }
+}
+
+@media (min-width: 1052px) {
+    .project {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .what-i-do {
+        grid-template-columns: .1em 1fr 1fr 1fr .1em;
+        grid-template-areas: 
+            ". h1 h1 h1 ."
+            ". design ecommrce wordpress ."
+            ". btn btn btn .";
+    }
+
+    header {
+        grid-template-columns: .1em 1fr .1em;
+        grid-template-areas: 
+        ". logo hmenu ."
+        ". name  ."
+        ". dev ."
+        ". photo .";
+        grid-auto-rows: minmax(100px, max-content);
+        position: relative;
+        text-align: start;
+    }
+
+    .photo {
+        position: absolute;
+        top: -220px;
+        left: 250px;
+        z-index: -1;
+    }
+
+    .dev {
+        padding-left: 14em;
+        padding-right: 4.3em;
+        position: absolute;
+        left: 150px;
+        top: 120px;
+    }
+
+    .name {
+        position: absolute;
+        left: 595px;
+        top: 105px;
+    }
+    
+    .who-iam {
+        position: relative;
+    }
+
+    .title {
+        position: absolute;
+        text-align: start;
+        width: fit-content;
+        padding-left: 15em;
+        padding-right: .5em;
+        left: 250px;
+        top: 400px;
+    }
+
+    .aboutme1 {
+        position: absolute;
+        top: -500px;
+        width: 500px;
+        left: 560px;
+        line-height: 1.5;
+    }
+   
+    .aboutme2 {
+        position: absolute;
+        top: -380px;
+        width: 500px;
+        left: 560px;
+        line-height: 1.5;
+    }
+
+    .photoo {
+        justify-self: left;
+        margin-left: 250px;
+    }
+
+    .title span {
+        display: inline-block;
+    }
+
+    .nav {
+        width: 30%;
+    }
+}
