@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: #23252C;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-color: #1A1B21;
+    border-radius: 10px;
+}
+
+.info,
+.contact,
+.more-info,
+.social-media {
+    padding: 1.5em 2em;
+}
+
+/* Photo */
+
+.photo > img {
+    border-radius: 10px 10px 0px 0px;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Info */
+
+.info {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.career {
+    color: #F3BF99;
+}
+
+.career {
+    font-size: 1.3rem;
+}
+
+.info a {
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}
+
+.info a:focus {
+    outline: 2px solid #5093E2;
+    padding: .1em;
+}
+
+/* Contact */
+
+.contact {
+    display: flex;
+    gap: 1em;
+}
+
+.contact a {
+    display: flex;
+    text-decoration: none;
+    gap: 1em;
+    padding: .8em 2em;
+    border-radius: 5px;
+    width: 200px;
+    justify-content: center;
+}
+
+.contact a > img {
+    width: 20px;
+}
+
+.email--btn {
+    color: #374151;
+    background-color: #fff;
+}
+
+.email--btn:hover {
+    background-color: #374151;
+    color: #fff;
+}
+
+.linkedin--btn {
+    color: #fff;
+    background-color: #5093E2;
+}
+
+.linkedin--btn:hover {
+    background-color: #374151;
+}
+
+.email--btn:focus,
+.linkedin--btn:focus {
+    outline: 2px solid #5093E2;
+}
+
+/* MoreInfo */
+
+.about, .interste {
+    line-height: 1.6;
+    color: #DCDCDC;
+}
+
+.about {
+    margin-bottom: 1.5em;
+}
+
+.more-info h2 {
+    margin-bottom: .5em;
+}
+
+.interste {
+    margin-bottom: 2em;
+}
+
+/* SocialMedia */
+
+.social-media {
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 1em;
+    background-color: #161619;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    opacity: .6;
+}
+
+.social-media a:focus {
+    outline: 2px solid #5093E2;
+}
+
+.social-media img {
+    width: 40px;
+    transform: scale(.9);
+    transition: .3s;
+}
+
+.social-media img:hover, .social-media img:focus  {
+    transform: scale(1);
+}
+
+/* light theme */
+
+/* .container {
+    background-color: #F5F5F5;
+    color: #2B283A;
+}
+
+.info a {
+    color: #2B283A;
+}
+
+.about, .interste {
+    color: #2B283A;
+}
+
+.social-media {
+    background-color: #D5D4D8;
+}
+
+.email--btn {
+    box-shadow: .1em .1em .2em #2b283a7a;
+} */
